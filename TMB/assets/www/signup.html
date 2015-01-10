@@ -1,0 +1,28 @@
+
+	<div data-role="page" id="signup-page">
+		<header data-role="header" class='header-style'>
+			<h1>Track My Buddy</h1>
+		</header>
+		<div data-role="content" class="content">
+			<div id="signup-main">
+				<ul>
+					<li><input type="text" id="name" placeholder="Name" class="signup-input"/></li>
+					<li><input type="tel" id="phone-no" placeholder="Phone Number"  class="signup-input"/></li>
+					<li><input type="radio" class='float-left radio-icon' id="radio-choice-1" name="gender" value="male" data-role="none" checked>
+							<label class='float-left radio-label' for="radio-choice-1">Male</label>
+						<input class='float-left radio-icon' type="radio" id="radio-choice-2" name="gender" value="female" data-role="none">
+							<label class='float-left radio-label' for="radio-choice-2">Female</label>
+					</li>
+				</ul>
+				<div id="signup-footer">
+					<input type="button" id="signonButton" value="Register " />
+				</div>
+				<div class="signup-app-logo"></div>
+			</div>
+			<div id="loader">
+				<div id="loding-image"></div>
+				<div id="loading-text">Please Wait...</div>
+			</div>
+			<div id="ui-blocker"></div>
+		</div>
+	</div>

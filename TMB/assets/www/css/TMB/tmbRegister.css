@@ -1,0 +1,504 @@
+*{
+	text-rendering: optimizeLegibility !important;
+	text-shadow: none !important;
+}
+html{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	
+}
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+    padding: 0px;
+	background: url(../../image/tmb.jpg) no-repeat;
+	background-size: 100% 100%;
+	position:absolute;
+}
+#launch{
+	background-image: url(../../image/tmb.jpg);
+	background-size: 100% 100%;
+}
+#app-header{
+	display:-webkit-box;
+}
+.app-logo{
+	height: 36px;
+	width: 36px;
+	background: url(../../image/icon.png);
+	background-size: 100% 100%;
+	margin-left: 10px;
+	border: 1px solid blanchedalmond;
+	border-radius: 18px;
+	margin-top: 3px;
+	/*box-shadow: inset 2px 2px 6px rgba(255,255,255,0.6), inset -2px -2px 6px rgba(0,0,0,0.6), 0 1px 8px rgba(0,0,0,0.8);	*/
+}
+.app-name{
+	margin: 3px 12px !important;
+}
+ #map-canvas{
+	position: absolute !important;
+	top: 45px;
+	bottom: 0px;
+	width: 100%;
+	margin: 0px;
+    padding: 0px;
+	background-image: url(../../image/maps.png) !important;
+	border-top: 2px solid;
+	border-color: rgba(128, 51, 0, 0.99);
+	box-sizing: border-box;
+}
+.header-style{
+	background-color: #815514 !important;
+	border-top: 0px;
+	text-shadow: none !important;
+	color: white !important;
+	height:45px;
+}
+.content{
+	position: absolute;
+	top: 45px;
+	bottom: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 0px;
+	background-image: url(../../image/test1.png);
+	background-size: cover;
+	overflow: auto;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+.footer-style{
+	background-color: #815514 !important;
+	bottom: 0px;
+	position: absolute;
+	width: 100%;
+	border-bottom: 0px;
+	color: white !important;
+	text-shadow: none !important;
+}
+
+#signup-main{
+	position: relative;
+	width: 254px;
+	display: block;
+	height: 300px;
+	/*left: 50%;
+	top: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);*/
+	border: 1px solid #AF7723;
+	box-shadow: inset 2px 2px 6px rgba(255,255,255,0.6), inset -2px -2px 6px rgba(0,0,0,0.6), 0 1px 8px rgba(0,0,0,0.8);
+	border-radius: 10px;
+	border-top-right-radius: 75px;
+	border-bottom-left-radius: 75px;
+	/*background: rgba(0, 0, 0, 0.59);*/
+	background: rgba(85, 64, 53, 0.52);
+	-moz-background-clip:padding;
+	-webkit-background-clip:padding-box;
+	background-clip:padding-box;
+}
+#signup-main>ul{
+	padding: 23px;
+}
+#signup-main>ul li{
+	font-size: 0px;
+	list-style: none;
+	margin-top: 20px !important;
+}
+
+#signup-main>ul li>div{
+	height: 32px;
+	border-radius: 4px;
+	margin: 0;
+	font-size: 12px;
+	background-color: rgba(0, 0, 0, 0.17);
+	color: white;
+}
+.signup-input{
+	height: 100%;
+	text-shadow: none !important;
+}
+.radio-icon{
+	width: 20px;
+	height: 20px;
+	margin: 1px 4px 0px 0px;
+}
+.float-left{
+	float:left;
+} 
+.radio-label{
+	margin: 0px 12px 0px 0px !important;
+	font-size: 17px !important;
+	text-shadow: none;
+	color: white;
+}
+#signup-footer{
+	position: relative;
+	bottom: -26px;
+	width: 100%;
+	height: 67px;
+	background: rgba(141, 82, 19, 0.44);
+	overflow: hidden;
+	border-bottom-left-radius: 132px;
+	-moz-background-clip:padding;
+	-webkit-background-clip:padding-box;
+	background-clip:padding-box;
+}
+#signup-footer .ui-btn {
+	width: 76px;
+	margin-left: 36px;
+	background-color: #1054E6;
+	border-color: #1054E6;
+	color: white;
+	top: 6px;
+	text-shadow: none;
+	box-shadow: inset 1px 1px 1px rgba(255,255,255,0.6), inset 0px 0px 1px rgba(0,0,0,0.6), 1px 0px 0px rgba(0, 0, 0, 0.05);
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	border: none;
+	-moz-background-clip:padding;
+	-webkit-background-clip:padding-box;
+	background-clip:padding-box;
+}
+.signup-app-logo{
+	width: 90px;
+	height: 90px;
+	border-radius: 45px;
+	position: absolute;
+	right: 10px;
+	bottom: -14px;
+	z-index: 1;
+	background: url(../../image/icon.png);
+	background-color: rgb(143, 133, 94);
+	background-size: cover;
+	box-shadow: inset 2px 2px 6px rgba(255,255,255,0.6), inset -2px -2px 6px rgba(0,0,0,0.6), 0 1px 8px rgba(0,0,0,0.8);
+	/*border: 1px solid #AF7723;*/
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+}
+
+
+.error-content::before{
+	width: 208px;
+	height: 30px;
+	background: rgba(255, 224, 0, 0.290196);
+	display: block;
+	color: white;
+	font-size: 12px;
+	line-height: 30px;
+	border-radius: 5px;
+	border: 1px solid red;
+	position: absolute;
+	margin: 12px 23px 0px 23px;
+	border-top-right-radius: 38px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	text-shadow: none;
+}
+.error-value-name::before{
+	content: 'Please enter a valid name';
+}
+.error-value-phone::before{
+	content: 'Please enter a valid phone number';
+}
+.error-phone-digit::before{
+	content: 'Phone number should be a 10 digit';
+}
+
+#location-page{
+	height:100%;
+}
+#settings{
+	right: 0px;
+	position: absolute;
+	padding: 8px 14px;
+	border-left: 1px solid blanchedalmond;
+}
+.settings-bar{
+	width: 10px;
+	height: 3px;
+	background: white;
+	margin: 5px;
+}
+#settings-item-header{
+	position: absolute;
+	width: 120px;
+	z-index: 6;
+	top: 44px;
+	right: 1px;
+	border: 1px solid brown;
+	-webkit-transition: -webkit-transform 200ms;
+	 -webkit-transform: scale(0,0); 
+	-webkit-transform-origin-y: 0px;
+	-webkit-transform-origin-x: 100px;
+}
+.settings-scale #settings-item-header{
+	-webkit-transform: scale(1,1) !important; 
+}
+.settings-items{
+	padding: 10px 5px;
+	background: white;
+	color: black;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+}
+.settings-scale #overlay{
+	display:block !important;
+}
+#help-alert-popover{
+	position: absolute;
+	width: 277px;
+	height: 130px;
+	background: rgba(60, 44, 5, 0.94);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	top: 50%;
+	left: 50%;
+	border-radius: 5px;
+	/* display: none; */
+	padding: 10px;
+	box-sizing: border-box;
+	border: 2px solid red;
+}
+#alert-popup-msg{
+	position: relative;
+	width: 100%;
+	height: 50%;
+	text-shadow: none;
+	-webkit-animation: mymove 1s infinite; 
+	text-align: center;
+	padding: 6px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	border-bottom: 1px solid;
+}
+#alert-popup-btn{
+	position: relative;
+	width: 100%;
+	height: 50%;
+	display: -webkit-box;
+	padding: 4px 0px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	margin-top: 2px;
+	-webkit-box-pack: justify;
+}
+.alert-btn{
+	height: 100%;
+	background: rgba(194, 168, 135, 1);
+	margin: 0px 12px;
+	-webkit-box-flex: 1;
+	box-sizing: border-box;
+	border-radius: 7px;
+	box-shadow: inset 1px 1px 1px rgba(255,255,255,0.6), inset 0px 0px 1px rgba(0,0,0,0.6), 1px 0px 0px rgba(0,0,0,0.8);
+	border: 1px solid;
+	-webkit-animation: mymove 2s infinite;
+}
+
+#offline-error{
+	display:none;
+	height: 26px;
+	background: rgba(0, 0, 0, 0.73);
+	z-index: 10000000;
+	position: absolute;
+	width: 100%;
+	top: 45px;
+	color: white;
+	font-size: 14px;
+	-webkit-box-pack: center;
+	line-height: 26px;
+}
+#warning-image{
+	width: 26px;
+	background-image: url(../../image/warning-icon.png);
+	background-size: 100% 100%;
+}
+/***********************loadingIndicator************************/
+
+#loader{
+	display:none;
+	background-color: rgba(0, 0, 0, 0.85098);
+	position: absolute;
+	height: 50px;
+	left: 40px;
+	right: 40px;
+	background: rgba(0, 0, 0, 0.91);
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	text-shadow: none;
+	color: white;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+#loding-image{
+	height: 100%;
+	width: 40px;
+	float: left;
+	background-image: url(../../image/andrloader1.gif);
+	background-size: 100% 100%;
+}
+#loading-text{
+	float: left;
+	height: 100%;
+	line-height: 40px;
+	padding-left: 20px;
+}
+#ui-blocker{
+	display:none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+	background: transparent;
+}
+.loading #loader, .loading #ui-blocker{
+	display:block;
+}
+
+/****************************profile*********************/
+#location-page,#signup-page{
+	display: block !important;
+	position: fixed;
+	-webkit-transform: translateZ(0px);
+	transform: translateZ(0px);
+}
+#profile-page{
+	-webkit-transition: -webkit-transform 150ms;
+}
+.profile-scale{
+	-webkit-transform: scale(0,0);
+}
+#profile-app-logo{
+	margin-left: 0px;
+}
+#edit-profile-back-btn{
+	width: 23px;
+	background: url(../../image/back.png);
+	background-size: 100% 100%;
+	height: 23px;
+	top: 50%;
+	position: relative;
+	-webkit-transform: translateY(-50%);
+	margin-left: 10px;																										
+}
+#genaral-global-alert{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background-color: white;
+	background-position: -0.5px -1.5px;
+	background-size: 100% 100%;
+	border-radius: 9.5px;
+	background-repeat: no-repeat;
+	right: 59px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	box-shadow: inset 2px 2px 6px rgba(255,255,255,0.6), inset -2px -2px 6px rgba(0,0,0,0.6), 0 1px 8px rgba(0,0,0,0.8);
+}
+#profile-contents{
+	position: absolute;
+	top: 45px;
+	bottom: 0px;
+	width: 100%;
+	padding: 12px 22px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+#profile-photo{
+	height: 200px;
+	width: 200px;
+	background: rgba(197, 125, 16, 0.28);
+	margin-right: 0px;
+	background-size: 100% 100%;
+	border-radius: 5px;
+	position: relative;
+	background-image: url(../../image/background.png);
+	-webkit-transform: translateX(-50%);
+	left: 50%;
+	margin-top: 55px;
+}
+#profile-name{
+	margin-top: 35px;
+}
+#profile-phone-numer{
+	margin-top: 10px;
+}
+#profile-image{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	z-index: 0;
+}
+/************************alert*************************/
+.gl-alert-ok{
+	background: url(../../image/Glalertok.png);
+}
+.gl-alert{
+	background: url(../../image/Glalert.png);
+}
+
+#alert-chat{
+	background-image: url(../../image/msg.png);
+	background-size: 81% 91%;
+	background-position: 5px 2px;
+	background-repeat: no-repeat;
+}
+#alert-call{
+	background-image: url(../../image/call.png);
+	background-position: 10px 3px;
+	background-repeat: no-repeat;
+	background-size: 68% 93%;
+}
+#alert-directions{
+	background-image: url(../../image/direction.png);
+	background-size: 85% 96%;
+	background-position-x: 4px;
+	background-repeat: no-repeat;
+}
+.alert-success-btn{
+	background-color: rgba(248, 8, 8, 0.88) !important;
+}
+#alerter-person{
+	text-transform: uppercase;
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+0%   {color: white;}
+25%  {color: lime;}
+50%  {color: rgb(255, 235, 0);}
+75%  {color: rgb(0, 41, 255);}
+100% {color: springgreen;}
+}
+
+/***********************************marker**********************/
+.my-marker{
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image:url(../../image/friends.png);
+	height: 101px;
+	width: 106px;
+	position: relative;
+	background-size: 100% 100%;
+}
+#marker-image{
+	width: 50px;
+	height: 50px;
+	left: 28px;
+	top: 9px;
+	position: relative;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	background-size: 100% 100%;
+	background-image:url(../../image/background.png);
+	border: 1px solid;
+	box-sizing: border-box;
+	box-shadow: inset 2px 2px 6px rgba(255,255,255,0.6), inset -2px -2px 6px rgba(0,0,0,0.6), 0 0px 2px rgba(0,0,0,0.8);
+}

@@ -1,0 +1,72 @@
+
+	<div id="location-page" data-role="page" data-dom-cache="true" >
+		<div id="settings-item-header">
+			<div class="settings-items" id="edit-profile">Profile</div>
+		</div>
+		<header id="app-header" data-role="header" class='header-style'>
+			<div class="app-logo"></div>
+			<h1 class="app-name">Track My Buddy</h1>
+			<div id="genaral-global-alert"></div>
+			<div id="settings">
+				<div class="settings-bar"></div>
+				<div class="settings-bar"></div>
+				<div class="settings-bar"></div>
+			</div>
+		</header>
+		<div id="offline-error"><div id="warning-image"></div> You are in offline.!!</div>
+		<div id="map-canvas">
+		</div>
+		<div id="message-box" class='slide-left'>
+			<div id="chatting-name"></div>
+			<div id="message-content"></div>
+			<div id="message-footer">
+				<textarea name="msg" id="msg-text"></textarea>
+				<div id="msg-sent-btn" ></div>
+			</div>
+		</div>
+		<div id="overlay"></div>
+		<div id="alert-message-placeholder"></div>
+		<script type="text/html" id='infobox-data'>
+    
+			<div id="infobox-main">
+				<div id="infobox-header"> <div id="user-app-icon" ></div>Track My Buddy</div>
+				<div id="infobox-content" class="images">
+					<div  id="user-image" <% if (data.image) { %> style="background-image: url('<%= data.image %>')" <% } %> >
+						<% if (user) { %>
+							<div id="image-overlay"></div>
+							<div id="image-loader"></div>
+							<input type="file" id="insert-image" onchange="mapLayoutModule.changeImage(this)" accept="image/png,image/jpeg" capture="camera">
+						<% } %>
+					</div>
+					<div id="user-details">
+						<div id="user-name"><%= data.name %></div>
+						<div id="user-number"><%= data.phone %></div>
+					</div>
+				</div>
+				<div id="infobox-footer">
+					<% if(!user) { %>
+						<div id="message-id" onclick="mapLayoutModule.message('<%= data.name %>','<%= data._id %>');" class="footer-btn"></div>
+						<div id="direction-id" onclick="mapLayoutModule.getDirections();"  class="footer-btn"></div>
+						<div id="call-id" class="footer-btn" onclick="mapLayoutModule.makeACall('<%= data.phone %>')"></div>
+						<div id="alert-id" class="footer-btn footer-btn-last" onclick="mapLayoutModule.makeAnAlert('<%= data._id %>')" ></div>
+					<% } %>
+				</div>
+			</div>
+
+	</script>
+	<script type="text/html" id='alert-message'>
+		<div id="help-alert-popover">
+			<div id="alert-popup-msg">Mr  <span id="alerter-person"> <%= data.name %> </span> is in trouble, He needs your help immediately.</div>
+			<div id="alert-popup-btn">
+				<div class="alert-btn" id="alert-chat" onclick="mapLayoutModule.message('<%= data.name %>','<%= data._id %>');"></div>
+				<div class="alert-btn" id="alert-call" onclick="mapLayoutModule.makeACall('<%= data.phone %>')"></div>
+				<div class="alert-btn" id="alert-directions" onclick="mapLayoutModule.getDirections('<%= data.lat %>','<%= data.lon %>');"></div>
+			</div>
+		</div>
+	</script>
+	<script type="text/html" id='google-marker'>
+		<div class="my-marker"  <% if (user) { %> style="background-image: url(image/me.png)" <% } %> >
+			<div id="marker-image" <% if (data.image) { %> style="background-image: url('<%= data.image %>')" <% } %> ></div>
+		</div>
+	</script>
+	</div>

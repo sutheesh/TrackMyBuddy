@@ -8,3 +8,7 @@ This application mainly focused on security for the people. first of all the use
 * Chat Option : Using this Application , User can easily chat with their friends
 * Direction Service: Using TMB, User can easily find out their friends current location, and the shortest path to reach out them.
 * Calling Service: User can call his/her friends
+
+## Images
+
+![alt text](https://github.com/sutheesh/TrackMyBuddy/blob/master/ScreenShots/TMB_1.jpg)
